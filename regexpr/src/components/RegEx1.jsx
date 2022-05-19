@@ -8,16 +8,16 @@ export const RegEx1 = () =>
     const [emailmsg,setEmailmsg] = useState("")
     
     const checkEmail = (e) =>
-    {
-        // console.log(e.target.value);
-        if(regemail.test(e.target.value) === false)
-        {
-            setEmailmsg('Not Valid');            
-        }
-        else
-        {
-            setEmailmsg('Valid :)');            
-        }
+    {   
+            if(regemail.test(e.target.value) === false)
+            {
+                setEmailmsg('Not Valid');            
+            }
+            else
+            {
+                setEmailmsg('Valid :)');            
+            }
+        
     }
 
     console.log(emailmsg);
